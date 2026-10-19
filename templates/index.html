@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KEMO ❤️ SMOKA</title>
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;min-height:100vh;display:flex;align-items:center;
+justify-content:center;text-align:center;padding:20px;
+font-family:Arial,sans-serif;color:white;
+background:radial-gradient(circle at top,#45204f,#130b20 65%,#08060d);
+}
+.card{
+width:100%;max-width:420px;padding:30px 22px;border-radius:25px;
+background:#ffffff0c;border:1px solid #ff9bd955;
+box-shadow:0 0 35px #d946ef20;
+}
+.heart{font-size:65px;animation:pulse 1.3s infinite}
+h1{color:#ff9bd9;font-size:29px}
+p{line-height:2;color:#f5dff0}
+button{
+border:0;border-radius:30px;padding:13px 25px;
+background:linear-gradient(90deg,#ec4899,#a855f7);
+color:white;font-size:17px;font-weight:bold;cursor:pointer;
+}
+#message{display:none;margin-top:20px;color:#ffd3eb}
+@keyframes pulse{50%{transform:scale(1.15)}}
+</style>
+</head>
+<body>
+<main class="card">
+<div class="heart">❤️</div>
+<h1>KEMO ❤️ SMOKA</h1>
+<p>عالم صغير لينا إحنا الاتنين 💗<br>هنا الذكريات بتعيش والحب ليه حكاية.</p>
+<button onclick="showLove()">افتح مفاجأتك 💌</button>
+<p id="message">إنتِ حكاية جميلة نفسي أفضل أكتبها كل يوم ❤️🌹</p>
+</main>
+<script>
+function showLove(){
+document.getElementById('message').style.display='block';
+}
+</script>
+</body>
+</html>
